@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Kuvasz is an open-source, self-hosted uptime monitoring solution that provides comprehensive monitoring capabilities for websites and services." name="description"/>
+<link href="https://kuvasz-uptime.dev/changelog/" rel="canonical"/>
+<link href="../api-doc/" rel="prev"/>
+<link href="../conventions/" rel="next"/>
+<link href="../images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.13" name="generator"/>
+<title>Changelog - Kuvasz Uptime</title>
+<link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../stylesheets/custom.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<meta content="website" property="og:type"/>
+<meta content="Changelog - Kuvasz Uptime" property="og:title"/>
+<meta content="Kuvasz is an open-source, self-hosted uptime monitoring solution that provides comprehensive monitoring capabilities for websites and services." property="og:description"/>
+<meta content="https://kuvasz-uptime.dev/assets/images/social/changelog.png" property="og:image"/>
+<meta content="image/png" property="og:image:type"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://kuvasz-uptime.dev/changelog/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Changelog - Kuvasz Uptime" name="twitter:title"/>
+<meta content="Kuvasz is an open-source, self-hosted uptime monitoring solution that provides comprehensive monitoring capabilities for websites and services." name="twitter:description"/>
+<meta content="https://kuvasz-uptime.dev/assets/images/social/changelog.png" name="twitter:image"/>
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#2.3.0">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+<aside class="md-banner">
+<div class="md-banner__inner md-grid md-typeset">
+<button aria-label="Don't show this again" class="md-banner__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+<div class="align-center">
+<a href="https://ko-fi.com/L4L31DH59D" target="_blank">
+<img alt="Buy Me a Coffee at ko-fi.com" border="0" height="36" src="https://storage.ko-fi.com/cdn/kofi5.png?v=6" style="border:0px;height:36px;"/>
+</a>
+</div>
+</div>
+<script>var el=document.querySelector("[data-md-component=announce]");if(el){var content=el.querySelector(".md-typeset");__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0)}</script>
+</aside>
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Kuvasz Uptime" class="md-header__button md-logo" data-md-component="logo" href=".." title="Kuvasz Uptime">
+<img alt="logo" src="../images/kuvasz-logo.webp"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Kuvasz Uptime
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+<input aria-label="Switch to system preference" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to system preference">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/kuvasz-uptime/kuvasz" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Kuvasz Uptime" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Kuvasz Uptime">
+<img alt="logo" src="../images/kuvasz-logo.webp"/>
+</a>
+    Kuvasz Uptime
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/kuvasz-uptime/kuvasz" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
+<span class="md-ellipsis">
+    Introduction
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Getting started
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../setup/installation/">
+<span class="md-ellipsis">
+    Installation
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../setup/configuration/">
+<span class="md-ellipsis">
+    Configure Kuvasz
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../setup/integrations/">
+<span class="md-ellipsis">
+    Integrations setup
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../setup/managing-monitors/">
+<span class="md-ellipsis">
+    Managing monitors
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../setup/metrics-exporters/">
+<span class="md-ellipsis">
+    Metrics exporters
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../setup/examples/">
+<span class="md-ellipsis">
+    Recipes &amp; examples
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../demo/">
+<span class="md-ellipsis">
+    Live demo
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<span class="md-ellipsis">
+    Features
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Features
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../features/uptime-monitoring/">
+<span class="md-ellipsis">
+    Uptime monitoring
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../features/ssl-monitoring/">
+<span class="md-ellipsis">
+    SSL monitoring
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../features/notifications/">
+<span class="md-ellipsis">
+    Notifications
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../features/ui/">
+<span class="md-ellipsis">
+    Web UI
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../features/flexibility/">
+<span class="md-ellipsis">
+    Flexibility
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../features/performance/">
+<span class="md-ellipsis">
+    Performance
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../features/api/">
+<span class="md-ellipsis">
+    API
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../localization/">
+<span class="md-ellipsis">
+    Localization
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../api-doc/">
+<span class="md-ellipsis">
+    API docs
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Changelog
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Changelog
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.3.0">
+<span class="md-ellipsis">
+      2.3.0
+    </span>
+</a>
+<nav aria-label="2.3.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.2.0">
+<span class="md-ellipsis">
+      2.2.0
+    </span>
+</a>
+<nav aria-label="2.2.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features_1">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fixes">
+<span class="md-ellipsis">
+      Fixes
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.1.0">
+<span class="md-ellipsis">
+      2.1.0
+    </span>
+</a>
+<nav aria-label="2.1.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features_2">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.0.0">
+<span class="md-ellipsis">
+      2.0.0
+    </span>
+</a>
+<nav aria-label="2.0.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#breaking-changes">
+<span class="md-ellipsis">
+      Breaking changes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features_3">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chore">
+<span class="md-ellipsis">
+      Chore
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../conventions/">
+<span class="md-ellipsis">
+    Conventions
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://github.com/kuvasz-uptime/kuvasz/blob/main/LICENSE">
+<span class="md-ellipsis">
+    License
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://github.com/kuvasz-uptime/kuvasz/blob/main/CONTRIBUTING.md">
+<span class="md-ellipsis">
+    Contributing
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="https://ko-fi.com/kuvasz">
+<span class="md-ellipsis">
+    Sponsoring
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.3.0">
+<span class="md-ellipsis">
+      2.3.0
+    </span>
+</a>
+<nav aria-label="2.3.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.2.0">
+<span class="md-ellipsis">
+      2.2.0
+    </span>
+</a>
+<nav aria-label="2.2.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features_1">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fixes">
+<span class="md-ellipsis">
+      Fixes
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.1.0">
+<span class="md-ellipsis">
+      2.1.0
+    </span>
+</a>
+<nav aria-label="2.1.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features_2">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2.0.0">
+<span class="md-ellipsis">
+      2.0.0
+    </span>
+</a>
+<nav aria-label="2.0.0" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#breaking-changes">
+<span class="md-ellipsis">
+      Breaking changes
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#features_3">
+<span class="md-ellipsis">
+      Features
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#chore">
+<span class="md-ellipsis">
+      Chore
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>Changelog</h1>
+<div class="admonition tip">
+<p class="admonition-title">Are you looking for 1.x.x changelogs?</p>
+<p>Prior to version 2.0.0, the changelogs were maintained <strong>only in the</strong> <a href="https://github.com/kuvasz-uptime/kuvasz/releases" target="_blank"><strong>GitHub repository</strong></a>.</p>
+</div>
+<h2 id="2.3.0">2.3.0 <small>2025-07-19</small></h2>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>Discord integration</strong>: Added support for sending notifications to Discord channels via webhooks. Configure Discord integrations in your YAML file and receive real-time alerts about monitor status changes directly in your Discord server.</li>
+</ul>
+<h2 id="2.2.0">2.2.0 <small>2025-07-17</small></h2>
+<h3 id="features_1">Features</h3>
+<ul>
+<li><strong>Metrics exporter settings</strong> are exposed both on the API (under <code>GET /api/v1/settings</code>) and on the UI, so you can easily get an overview of the effective configuration.</li>
+<li>A <strong>live demo</strong> is available at <a href="https://demo.kuvasz-uptime.dev" target="blank"><strong>demo.kuvasz-uptime.dev</strong></a> where you can try out the latest features of <em>Kuvasz</em> without setting up your own instance. Further details, credentials <a href="../demo/"><strong>here</strong></a>.</li>
+</ul>
+<h3 id="fixes">Fixes</h3>
+<ul>
+<li>Fixed the glitch on the UI regarding read-only mode in case the underlying logic was initialized before YAML monitors were loaded. This caused the UI to not show the read-only mode correctly, even though the backend was working as expected.</li>
+</ul>
+<h2 id="2.1.0">2.1.0 <small>2025-07-11</small></h2>
+<h3 id="features_2">Features</h3>
+<ul>
+<li><strong>Metrics exporters</strong>: Added support for exporting metrics to <em>OpenTelemetry</em> and <em>Prometheus</em>. See the <a href="../setup/metrics-exporters/"><strong>Metrics exporters</strong></a> section for more details. With this feature, you easily integrate <em>Kuvasz</em> with your existing observability stack. Currently exposed metrics are:<ul>
+<li>Uptime status</li>
+<li>Latest latency</li>
+<li>SSL status</li>
+<li>SSL expiry date</li>
+</ul>
+</li>
+<li><strong>Bearer token authentication</strong>: Added support for <a href="../features/api/#authentication"><strong>Bearer token authentication on the API</strong></a>, along with the existing API key authentication. This allows you to use the same authentication mechanism as other modern APIs, making it easier to integrate with your existing systems.</li>
+</ul>
+<h2 id="2.0.0">2.0.0 <small>2025-07-02</small></h2>
+<h3 id="breaking-changes">Breaking changes</h3>
+<ul>
+<li><strong>Native image build logic has been removed</strong>: Native images will not be supported in the future due to their higher level of unpredictability, and the achieved performance gain/resource saving in exchange is not so significant.</li>
+<li><strong>PostgreSQL 12+</strong> is the minimum supported DB version.</li>
+<li><strong>The HTTP communication log has been removed</strong>, because it was an unnecessary overhead in the network pipeline, and a built-in solution is also available now.</li>
+<li><strong>Authentication</strong> has been fully reworked, read the <a href="../setup/configuration/#authentication"><strong>Authentication</strong></a> section for more details.</li>
+<li>The <strong>latency data</strong> (avg, p95, p99) of the monitors are not returned under <code>MonitorDetailsDto</code>, because a new endpoint is introduced for metrics like this under <code>/api/v1/monitors/{monitorId}/stats</code></li>
+<li>(might be breaking, but not necessarily): SSL validation now takes <strong>intermediate certs</strong> into account</li>
+<li>The <code>DELETE /monitors/{monitorId}/pagerduty-integration-key</code> and <code>PUT /monitors/{monitorId}/pagerduty-integration-key</code> endpoints are gone, because the PATCH endpoint is now flexible enough to support both use-cases.</li>
+</ul>
+<h3 id="features_3">Features</h3>
+<ul>
+<li><strong>New Monitor attributes</strong> (every default value also applies for the existing monitors):<ul>
+<li><code>requestMethod</code>: <code>GET</code> or <code>HEAD</code>. The latter is generally faster, but be aware that certain targets might not support it (default <code>GET</code>)</li>
+<li><code>latencyHistoryEnabled</code>: <code>true</code> or <code>false</code>. If set to <code>false</code> latency will be not logged or returned in the monitors' metrics -&gt; Better for a snappier experience on a slow machine (default <code>true</code>)</li>
+<li><code>forceNoCache</code>: <code>true</code> or <code>false</code>. If set to <code>true</code>, a <code>Cache-Control: no-cache</code> header will be sent with the request (default <code>true</code>)</li>
+<li><code>followRedirects</code>: <code>true</code> or <code>false</code>. If set to <code>true</code>, Kuvasz will follow redirects during uptime checks, and the last, non-redirected URL will be evaluated (default <code>true</code>)</li>
+<li><code>sslExpiryThreshold</code>: The number of days before the SSL certificate expires when a notification should be sent.</li>
+</ul>
+</li>
+<li><strong>Option to disable authentication</strong> (useful in a home-lab, for example) via <code>ENABLE_AUTH</code>. <code>true</code> or <code>false</code>, default <code>true</code></li>
+<li><strong>Optimization of the check scheduling logic</strong>: the first uptime check will be scheduled randomly between 1 second and the configured interval of the monitor to prevent hitting the HTTP client with a lot of requests right after the startup.</li>
+<li><strong>Optimization of the uptime checker</strong>:<ul>
+<li>Made the error handling more robust by handling exceptions that come from invalid response format (e.g. invalid status code)</li>
+<li>Increased the client's read timeout to 30s</li>
+<li>Added support for non-absolute redirect URLs (a redirect location of <code>/path/something-else</code> on <code>https://example.com</code> will be resolved as <code>https://example.com/path/something-else</code></li>
+<li>Detect and avoid redirect loops</li>
+</ul>
+</li>
+<li><strong>Improvement of the <code>DOWN</code> event's error formatting</strong> both for showing and saving it. Non-visible/printable characters, and long response errors are now sanitised and might be redacted. If the uptime check fails with a standard HTTP status code and a standard error response, then the HTTP status and its name will be the error's "label" (e.g. <code>403 Forbidden</code>)</li>
+<li>Initial (i.e. <strong>if there is no previous state for a given monitor</strong>) UP &amp; VALID states of uptime &amp; SSL checks are not sent to RTC &amp; SMPT event handlers to prevent sending irrelevant notifications upon the first startup</li>
+<li>The <strong>latency metrics</strong> calculation logic <strong>has been optimized</strong> to handle large datasets efficiently</li>
+<li>✨A brand-new <strong>Web UI</strong> has been introduced, which is more modern, responsive, and user-friendly</li>
+<li>Monitors are configurable via a <strong>YAML file</strong> besides the UI and the API ("<em>infrastructure as code</em>" way)</li>
+<li>Exposed <code>nextUptimeCheck</code> and <code>nextSSLCheck</code> on the API</li>
+<li>Made <code>sslValidUntil</code> persisted on the SSL events, and exposed it on the API</li>
+<li><code>sslExpiryThreshold</code> is configurable now on a per monitor basis</li>
+<li>Uptime &amp; latency data retention are separetely configurable now</li>
+<li>Made the whole project translatable (the only language set up is English, as of now, but future translations are already super-easy)</li>
+<li>Monitor filtering on the API was greatly improved with new filters: <code>enabled: Boolean?</code>, <code>sslCheckEnabeld: Boolean?</code>, <code>uptimeStatus: UptimeStatus[]?</code> and <code>sslStatus: SSLStatus[]?</code></li>
+<li>App and integration settings are exposed now both on the UI and on the API (under <code>GET /api/v1/settings</code>)</li>
+<li>Added more latency metrics to <code>GET /api/v1/monitors/{monitorId}/stats</code>: min, max and p90</li>
+<li>The integration setup has been completely reworked, making it smarter and more flexible. From now on, you can set up <strong>multiple integrations per type</strong> (Slack, E-mail, etc.) in your YAML config. Then you can make them global (that is in effect for all your monitors without further configuration), or <strong>you can assign them on a per monitor basis</strong>.</li>
+</ul>
+<h3 id="chore">Chore</h3>
+<ul>
+<li>Simplified and streamlined the things around jOOQ</li>
+<li>Simplified the logging configuration by moving it to Micronaut's own config file</li>
+<li>Changed the base image to <code>liberica-runtime-container:jre-17</code> and reduced the compressed image size by ~23%</li>
+<li>Build <code>arm64</code> images too</li>
+<li>Bumped the 3rd party dependencies to their latest versions</li>
+<li>Use Java 21</li>
+<li>Switched to a multi-module project layout (should have done it at the beginning 🤦 )</li>
+<li>Switched to kover from JaCoCo</li>
+</ul>
+<p>The <strong>full changelog</strong> is available on <a href="https://github.com/kuvasz-uptime/kuvasz/releases/tag/2.0.0"><strong>GitHub</strong></a></p>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: API docs" class="md-footer__link md-footer__link--prev" href="../api-doc/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                API docs
+              </div>
+</div>
+</a>
+<a aria-label="Next: Conventions" class="md-footer__link md-footer__link--next" href="../conventions/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                Conventions
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2020 - 2025 Kuvasz Uptime -  <a href="#__consent">Change cookie settings</a>
+</div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-consent" data-md-component="consent" hidden="" id="__consent">
+<div class="md-consent__overlay"></div>
+<aside class="md-consent__inner">
+<form class="md-consent__form md-grid md-typeset" name="consent">
+<h4>Cookie consent</h4>
+<p>We use cookies to render the GitHub widget in the header of this documentation.  With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" id="__settings" type="checkbox"/>
+<div class="md-consent__settings">
+<ul class="task-list">
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="github" type="checkbox"/>
+<span class="task-list-indicator"></span>
+      GitHub
+    </label>
+</li>
+</ul>
+</div>
+<div class="md-consent__controls">
+<button class="md-button md-button--primary">Accept</button>
+<button class="md-button md-button--primary" type="reset">Reject</button>
+<label class="md-button" for="__settings">Manage settings</label>
+</div>
+</form>
+</aside>
+</div>
+<script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "announce.dismiss"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script async="" data-token="4ba7aa9a-3e04-48bf-9fad-c8ea9e14e5ca" src="https://beamanalytics.b-cdn.net/beam.min.js">
+</script>
+<script>document$.subscribe(() => {
+            const dark_scheme_name = "slate"
+            
+            window.scheme = document.body.getAttribute("data-md-color-scheme")
+            const options = {
+                attributeFilter: ['data-md-color-scheme'],
+            };
+            function color_scheme_callback(mutations) {
+                for (let mutation of mutations) {
+                    if (mutation.attributeName === "data-md-color-scheme") {
+                        scheme = document.body.getAttribute("data-md-color-scheme")
+                        var iframe_list = document.getElementsByClassName("redoc-iframe")
+                        for(var i = 0; i < iframe_list.length; i++) {
+                            var ele = iframe_list.item(i);
+                            if (ele) {
+                                if (scheme === dark_scheme_name) {
+                                    ele.contentWindow.enable_dark_mode();
+                                } else {
+                                    ele.contentWindow.disable_dark_mode();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            observer = new MutationObserver(color_scheme_callback);
+            observer.observe(document.body, options);
+            })</script><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
