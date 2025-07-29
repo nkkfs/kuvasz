@@ -6,31 +6,32 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Kuvasz is an open-source, self-hosted uptime monitoring solution that provides comprehensive monitoring capabilities for websites and services." name="description"/>
-<link href="https://kuvasz-uptime.dev/" rel="canonical"/>
-<link href="setup/installation/" rel="next"/>
-<link href="images/favicon.png" rel="icon"/>
+<link href="https://kuvasz-uptime.dev/api-docs/" rel="canonical"/>
+<link href="../features/api/" rel="prev"/>
+<link href="../changelog/" rel="next"/>
+<link href="../images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.13" name="generator"/>
-<title>Kuvasz Uptime</title>
-<link href="assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
-<link href="assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<title>API docs - Kuvasz Uptime</title>
+<link href="../assets/stylesheets/main.342714a4.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="stylesheets/custom.css" rel="stylesheet"/>
-<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../stylesheets/custom.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <meta content="website" property="og:type"/>
-<meta content="Kuvasz Uptime" property="og:title"/>
+<meta content="API docs - Kuvasz Uptime" property="og:title"/>
 <meta content="Kuvasz is an open-source, self-hosted uptime monitoring solution that provides comprehensive monitoring capabilities for websites and services." property="og:description"/>
-<meta content="https://kuvasz-uptime.dev/assets/images/social/index.png" property="og:image"/>
+<meta content="https://kuvasz-uptime.dev/assets/images/social/api-docs.png" property="og:image"/>
 <meta content="image/png" property="og:image:type"/>
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="https://kuvasz-uptime.dev/" property="og:url"/>
+<meta content="https://kuvasz-uptime.dev/api-docs/" property="og:url"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Kuvasz Uptime" name="twitter:title"/>
+<meta content="API docs - Kuvasz Uptime" name="twitter:title"/>
 <meta content="Kuvasz is an open-source, self-hosted uptime monitoring solution that provides comprehensive monitoring capabilities for websites and services." name="twitter:description"/>
-<meta content="https://kuvasz-uptime.dev/assets/images/social/index.png" name="twitter:image"/>
- <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<meta content="https://kuvasz-uptime.dev/assets/images/social/api-docs.png" name="twitter:image"/>
+ <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -39,22 +40,19 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Kuvasz Uptime" class="md-header__button md-logo" data-md-component="logo" href="." title="Kuvasz Uptime">
-<img alt="logo" src="images/kuvasz-logo.webp"/>
+<a aria-label="Kuvasz Uptime" class="md-header__button md-logo" data-md-component="logo" href=".." title="Kuvasz Uptime">
+<img alt="logo" src="../images/kuvasz-logo.webp"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
@@ -69,7 +67,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Introduction
+              API docs
             
           </span>
 </div>
@@ -141,8 +139,8 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Kuvasz Uptime" class="md-nav__button md-logo" data-md-component="logo" href="." title="Kuvasz Uptime">
-<img alt="logo" src="images/kuvasz-logo.webp"/>
+<a aria-label="Kuvasz Uptime" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Kuvasz Uptime">
+<img alt="logo" src="../images/kuvasz-logo.webp"/>
 </a>
     Kuvasz Uptime
   </label>
@@ -157,64 +155,13 @@
 </a>
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Introduction
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href=".">
+<li class="md-nav__item">
+<a class="md-nav__link" href="..">
 <span class="md-ellipsis">
     Introduction
     
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#highlights">
-<span class="md-ellipsis">
-      Highlights
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dont-miss-out-on-the-latest-updates">
-<span class="md-ellipsis">
-      Don't miss out on the latest updates!
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#where-does-the-name-come-from">
-<span class="md-ellipsis">
-      Where does the name come from?
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#do-you-like-it">
-<span class="md-ellipsis">
-      Do you like it?
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#do-you-have-a-question">
-<span class="md-ellipsis">
-      Do you have a question?
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
@@ -232,7 +179,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="setup/installation/">
+<a class="md-nav__link" href="../setup/installation/">
 <span class="md-ellipsis">
     Installation
     
@@ -240,7 +187,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="setup/configuration/">
+<a class="md-nav__link" href="../setup/configuration/">
 <span class="md-ellipsis">
     Configure Kuvasz
     
@@ -248,7 +195,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="setup/integrations/">
+<a class="md-nav__link" href="../setup/integrations/">
 <span class="md-ellipsis">
     Integrations setup
     
@@ -256,7 +203,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="setup/managing-monitors/">
+<a class="md-nav__link" href="../setup/managing-monitors/">
 <span class="md-ellipsis">
     Managing monitors
     
@@ -264,7 +211,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="setup/metrics-exporters/">
+<a class="md-nav__link" href="../setup/metrics-exporters/">
 <span class="md-ellipsis">
     Metrics exporters
     
@@ -272,7 +219,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="setup/examples/">
+<a class="md-nav__link" href="../setup/examples/">
 <span class="md-ellipsis">
     Recipes &amp; examples
     
@@ -283,7 +230,7 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="demo/">
+<a class="md-nav__link" href="../demo/">
 <span class="md-ellipsis">
     Live demo
     
@@ -306,7 +253,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="features/uptime-monitoring/">
+<a class="md-nav__link" href="../features/uptime-monitoring/">
 <span class="md-ellipsis">
     Uptime monitoring
     
@@ -314,7 +261,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="features/ssl-monitoring/">
+<a class="md-nav__link" href="../features/ssl-monitoring/">
 <span class="md-ellipsis">
     SSL monitoring
     
@@ -322,7 +269,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="features/notifications/">
+<a class="md-nav__link" href="../features/notifications/">
 <span class="md-ellipsis">
     Notifications
     
@@ -330,7 +277,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="features/ui/">
+<a class="md-nav__link" href="../features/ui/">
 <span class="md-ellipsis">
     Web UI
     
@@ -338,7 +285,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="features/flexibility/">
+<a class="md-nav__link" href="../features/flexibility/">
 <span class="md-ellipsis">
     Flexibility
     
@@ -346,7 +293,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="features/performance/">
+<a class="md-nav__link" href="../features/performance/">
 <span class="md-ellipsis">
     Performance
     
@@ -354,7 +301,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="features/api/">
+<a class="md-nav__link" href="../features/api/">
 <span class="md-ellipsis">
     API
     
@@ -364,8 +311,9 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="api-docs/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     API docs
     
@@ -373,7 +321,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="changelog/">
+<a class="md-nav__link" href="../changelog/">
 <span class="md-ellipsis">
     Changelog
     
@@ -381,7 +329,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="conventions/">
+<a class="md-nav__link" href="../conventions/">
 <span class="md-ellipsis">
     Conventions
     
@@ -389,7 +337,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="localization/">
+<a class="md-nav__link" href="../localization/">
 <span class="md-ellipsis">
     Localization
     
@@ -413,7 +361,7 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="sponsoring/">
+<a class="md-nav__link" href="../sponsoring/">
 <span class="md-ellipsis">
     Sponsoring ♥
     
@@ -425,150 +373,18 @@
 </div>
 </div>
 </div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden="">
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#highlights">
-<span class="md-ellipsis">
-      Highlights
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#dont-miss-out-on-the-latest-updates">
-<span class="md-ellipsis">
-      Don't miss out on the latest updates!
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#where-does-the-name-come-from">
-<span class="md-ellipsis">
-      Where does the name come from?
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#do-you-like-it">
-<span class="md-ellipsis">
-      Do you like it?
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#do-you-have-a-question">
-<span class="md-ellipsis">
-      Do you have a question?
-    </span>
-</a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1"></h1>
-<figure>
-<img alt="Kuvasz banner" class="skip-lb" src="images/kuvasz-banner-light.webp#only-light" width="350">
-<img alt="Kuvasz banner" class="skip-lb" src="images/kuvasz-banner-dark.webp#only-dark" width="350">
-<br/>
-<figcaption>Welcome to <strong>Kuvasz</strong> [ˈkuvɒs], an open-source, self-hosted uptime &amp; SSL monitoring service</figcaption>
-</img></img></figure>
-<div class="admonition tip">
-<p class="admonition-title">TL;DR</p>
-<p>Do you want to try out <em>Kuvasz</em> without installing it? There is a <a href="demo/"><strong>live demo</strong></a> available!</p>
-<p>Are you looking for the <strong>installation guide</strong>? You can find it <a href="setup/installation/"><strong>here</strong></a>!</p>
-</div>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="images/feature_carousel.webp"><img alt="Kuvasz" src="images/feature_carousel.webp"/></a></p>
-<h2 id="highlights">Highlights</h2>
-<div class="grid cards">
-<ul>
-<li>
-<p><img alt="🟢" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f7e2.svg" title=":green_circle:"/> <strong>Uptime monitoring</strong></p>
-<hr/>
-<p>With flexible configuration, adjustable intervals, headers, and more.</p>
-<p><a href="features/uptime-monitoring/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Uptime monitoring</a></p>
-</li>
-<li>
-<p><img alt="🔒" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f512.svg" title=":lock:"/> <strong>SSL monitoring</strong></p>
-<hr/>
-<p>Kuvasz checks your SSL certificates every day, and notifies you before they expire.</p>
-<p><a href="features/ssl-monitoring/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> SSL monitoring</a></p>
-</li>
-<li>
-<p><img alt="🔔" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f514.svg" title=":bell:"/> <strong>Notifications</strong></p>
-<hr/>
-<p>Supports multiple notification channels, currently including email, Slack, Discord, Telegram, and PagerDuty. You can configure the notification channels on a per-monitor basis.</p>
-<p><a href="features/notifications/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Notifications</a></p>
-</li>
-<li>
-<p><img alt="🌍" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f30d.svg" title=":earth_africa:"/> <strong>API</strong></p>
-<hr/>
-<p>Provides a fully-fledged REST API to manage your monitors, check their status, and more.</p>
-<p><a href="features/api/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> API</a></p>
-</li>
-<li>
-<p><img alt="📊" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4ca.svg" title=":bar_chart:"/> <strong>Metrics Exporters</strong></p>
-<hr/>
-<p>Export your metrics to <em>Prometheus</em> or to any <em>OTLP-compatible</em> tool, to integrate with your existing monitoring and alerting systems.</p>
-<p><a href="setup/metrics-exporters/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Metrics exporters</a></p>
-</li>
-<li>
-<p><img alt="✨" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2728.svg" title=":sparkles:"/> <strong>Sleek UI</strong></p>
-<hr/>
-<p>Kuvasz has a modern, responsive, and user-friendly interface that makes it easy to manage your monitors.</p>
-<p><a href="features/ui/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Web UI</a></p>
-</li>
-<li>
-<p><span class="twemoji lg card-header-icon"><svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8.75.75V2h.985c.304 0 .603.08.867.231l1.29.736q.058.033.124.033h2.234a.75.75 0 0 1 0 1.5h-.427l2.111 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.006.005-.01.01-.045.04q-.317.265-.686.45C14.556 10.78 13.88 11 13 11a4.5 4.5 0 0 1-2.023-.454 3.5 3.5 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L12.178 4.5h-.162c-.305 0-.604-.079-.868-.231l-1.29-.736a.25.25 0 0 0-.124-.033H8.75V13h2.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h2.5V3.5h-.984a.25.25 0 0 0-.124.033l-1.289.737c-.265.15-.564.23-.869.23h-.162l2.112 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.016.015-.045.04q-.317.265-.686.45C4.556 10.78 3.88 11 3 11a4.5 4.5 0 0 1-2.023-.454 3.5 3.5 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L2.178 4.5H1.75a.75.75 0 0 1 0-1.5h2.234a.25.25 0 0 0 .125-.033l1.288-.737c.265-.15.564-.23.869-.23h.984V.75a.75.75 0 0 1 1.5 0m2.945 8.477c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327Zm-10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327Z"></path></svg></span> <strong>Free &amp; Open Source</strong></p>
-<hr/>
-<p>Kuvasz is licensed under the <em>Apache License 2.0</em>, it's free and it always will be.</p>
-<p><a href="https://ko-fi.com/L4L31DH59D" target="_blank"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Sponsoring</a></p>
-</li>
-<li>
-<p><img alt="💪" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4aa.svg" title=":muscle:"/> <strong>Performance &amp; Robustness</strong></p>
-<hr/>
-<p>Tested in real-world scenarios, with large numbers of monitors and checks.</p>
-<p><a href="features/performance/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Performance</a></p>
-</li>
-<li>
-<p><img alt="🤸‍♀️" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f938-200d-2640-fe0f.svg" title=":woman_cartwheeling:"/> <strong>Flexible Configuration</strong></p>
-<hr/>
-<p>You can choose how you would like to manage your monitors: on the UI, or via the API, or with a single YAML file.</p>
-<p><a href="features/flexibility/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Flexibility</a></p>
-</li>
-<li>
-<p><img alt="☁" class="twemoji lg card-header-icon" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2601.svg" title=":cloud:"/> <strong>Cloud Native</strong></p>
-<hr/>
-<p>Kuvasz is built with cloud-native principles in mind, distributed as a single Docker image, and only requires a <em>PostgreSQL</em> database to run.</p>
-<p><a href="setup/installation/"><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Getting started</a></p>
-</li>
-</ul>
-</div>
-<h2 id="dont-miss-out-on-the-latest-updates">Don't miss out on the latest updates!</h2>
-<p>First and foremost, if you want to <strong>stay up-to-date with the latest news</strong>, features, and updates about <em>Kuvasz</em>, please consider:</p>
-<ul>
-<li>starring the project on <a href="https://github.com/kuvasz-uptime/kuvasz" target="_blank"><strong>GitHub</strong></a> and on <a href="https://hub.docker.com/r/kuvaszmonitoring/kuvasz" target="_blank"><strong>Docker Hub</strong></a></li>
-<li>following us on <a href="https://x.com/KuvaszUptime" target="_blank"><strong>X</strong></a></li>
-<li>following us on <a _="," href="https://techhub.social/@KuvaszUptime" rel="me" target="_blank"><strong>Mastodon</strong></a></li>
-</ul>
-<p>You can also find some occasional updates on my personal blog at <a href="https://akobor.me" target="_blank"><strong>akobor.me</strong></a>.</p>
-<h2 id="where-does-the-name-come-from">Where does the name come from?</h2>
-<p>Kuvasz (pronounce as [ˈkuvɒs]) is an ancient hungarian breed of livestock &amp; guard dog. You can read more about them
-on <a href="https://en.wikipedia.org/wiki/Kuvasz" target="_blank"><strong>Wikipedia</strong></a>.</p>
-<h2 id="do-you-like-it">Do you like it?</h2>
-<p>While <em>Kuvasz</em> is free and open-source, it still requires a lot of time and effort to maintain and develop. If you like it, please consider our <a href="sponsoring/"><strong>sponsoring</strong></a> options.</p>
-<h2 id="do-you-have-a-question">Do you have a question?</h2>
-<p>Let's go to the <a href="https://github.com/kuvasz-uptime/kuvasz/discussions" target="_blank"><strong>GitHub discussions</strong></a>!</p>
+<h1>API docs</h1>
+<p><iframe class="redoc-iframe" frameborder="0" id="b8f36315" src="redoc-b8f36315.html" style="overflow:hidden;width:100%;height:80vh;" width="100%"></iframe></p>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -581,13 +397,26 @@ on <a href="https://en.wikipedia.org/wiki/Kuvasz" target="_blank"><strong>Wikipe
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Next: Installation" class="md-footer__link md-footer__link--next" href="setup/installation/">
+<a aria-label="Previous: API" class="md-footer__link md-footer__link--prev" href="../features/api/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                API
+              </div>
+</div>
+</a>
+<a aria-label="Next: Changelog" class="md-footer__link md-footer__link--next" href="../changelog/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                Installation
+                Changelog
               </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -642,8 +471,8 @@ on <a href="https://en.wikipedia.org/wiki/Kuvasz" target="_blank"><strong>Wikipe
 </aside>
 </div>
 <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
-<script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "announce.dismiss"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-<script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+<script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "content.tabs.link", "content.tooltips", "announce.dismiss"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
 <script async="" data-token="4ba7aa9a-3e04-48bf-9fad-c8ea9e14e5ca" src="https://beamanalytics.b-cdn.net/beam.min.js">
 </script>
 <script>document$.subscribe(() => {
